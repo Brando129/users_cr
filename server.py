@@ -21,6 +21,10 @@ def create():
     User.save(request.form)
     return redirect('/users')
 
+@app.route('/user/current')
+def show_current():
+    return render_template("read_one.html")
+
 
 if __name__=='__main__':
     app.run(debug=True, host='localhost', port=5001)
