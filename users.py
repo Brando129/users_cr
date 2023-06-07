@@ -25,3 +25,9 @@ class User:
         #comes back as the new row id. If the query is bad it will come back as False
         result = connectToMySQL('users_schema').query_db(query, data)
         return result
+
+
+# ***** TO DO *******
+#Fix Header on Create new user page
+#Fix issue with not showing the created at
+#Add documentation
